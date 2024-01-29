@@ -1,0 +1,70 @@
+# 页面顶部大图
+banner_img: /img/bg/banner.png
+
+# 博客标题
+navbar:
+  blog_title: 头顶渐渐微凉
+
+# 网页统计
+footer:
+  statistics:
+    enable: true
+    source: "busuanzi"  # 可选 leancloud | busuanzi  根据自己需求选择
+    pv_format: "总访问量 {} 次"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    uv_format: "总访客数 {} 人"
+
+# 首页打字机
+index:
+  slogan:
+    enable: true
+    text: 怪话多是真话，怪事多有隐情
+fun_features:
+  typing: # 为 subtitle 添加打字机效果
+    enable: true
+    typeSpeed: 100 # 打印速度
+    cursorChar: "_" # 游标字符
+    loop: false # 是否循环播放效果
+
+### 文章页配置
+post:
+  default_index_img: /img/bg/banner.png
+  meta:
+    author: # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
+      enable: false
+    date: # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
+      enable: true
+      format: "dddd, MMMM Do YYYY, h:mm a"  # 格式参照 ISO-8601 日期格式化
+    wordcount: # 字数统计
+      enable: true
+      format: "{} 字"  # 显示的文本，{}是数字的占位符（必须包含)，下同
+    min2read: # 阅读时间
+      enable: true
+      format: "{} 分钟"
+    views: # 阅读次数
+      enable: true
+      source: "busuanzi"  # 统计数据来源，可选：leancloud | busuanzi   注意不蒜子会间歇抽风
+      format: "{} 次"
+
+### 关于页配置
+about:
+  avatar: /img/about/user.png
+  name: 头顶渐渐微凉
+  intro: 让我们与知识为伴，与智慧为友，与勇气同行
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/shuaiwu1108', tip: 'GitHub' }
+    - { class: 'iconfont icon-wechat-fill', qrcode: '/img/about/wechat.png' }
+
+### 代码块
+code:
+  copy_btn: true
+  highlight:
+    enable: true
+    line_number: true
+    lib: "highlightjs"
+    highlightjs:
+      style: 'Github Gist'
+      bg_color: true
+    prismjs:
+      style: "default"
+      preprocess: false
+

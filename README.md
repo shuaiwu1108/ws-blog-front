@@ -43,3 +43,6 @@ repo: https://github.com/shuaiwu1108/ws-blog-deploy.git
 
 ### 部署
 > hexo deploy
+
+### 效果预览
+![image](https://github.com/shuaiwu1108/ws-blog-front/assets/26000304/3f047d72-1dfe-452b-b799-9c026f5e7ae4)
